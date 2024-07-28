@@ -1,0 +1,13 @@
+#include<studio.h>
+int main(){
+ long int n=5000; i, hcf=1;
+ for (i=1;i<n;i++){
+  if (n%i == 0 && n>hcf){
+   hcf = i;
+  }
+ }
+ clrscr();
+ printf("%ld", hcf);
+ getch();
+ return 0;
+}
